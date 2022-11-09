@@ -1,18 +1,97 @@
-body {
+/* body {
+    padding-top: 4%;
+    padding-left: 4%;
     width: 90vw;
     height: 70vh;
     background-color: white;
-}
+} */
 
 .list {
-    width: 30%;
-    height: 50%;
+    width: 25%;
+    height: 60%;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 195px;
+    /* padding-bottom: 7%; */
+    
     background-color: white;
     border: 1px;
     border-color: rgba(128, 128, 128, 0.44);
     border-radius: 15px;
     border-width: 2px;
     border-style: groove;
+}
+
+.yellow {
+position: relative;
+height: 28px;
+left: 0%;
+top: 0%;
+background: #FFDC40;
+}
+
+.notButtonOnUp {
+    position: relative;
+    margin-top: -10%;
+    margin-left: 80%;
+    margin-bottom: 3%;
+}
+
+.toDoList {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-style: Black;
+    font-size: 26px;
+    padding-left: 10%;
+    text-align: Center;
+    vertical-align: Top;
+}
+
+.mainList {
+    width: 57%;
+    height: 60%;
+    margin-top: 0%;
+    margin-left: 7%;
+    margin-bottom: 7%;
+    /* padding-bottom: 7%; */
+    padding-left: 28%;
+    
+    background-color: white;
+    border: 1px;
+    border-color: rgba(128, 128, 128, 0.44);
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: groove;
+}
+
+.addButton {
+    position: relative;
+    margin-top: -7%;
+    margin-left: 32%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+.writings {
+    position: relative;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+
+}
+
+.elementsOfList {
+    position: relative;
+    margin-top: 0%;
+    margin-left: -35%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+.delete {
+    position: relative;
+    margin-top: 0%;
+    margin-left: 80%;
+    margin-bottom: 0%;
+    padding-top: 0%;
 }
