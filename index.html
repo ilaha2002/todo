@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset = "UTF">
-    <title>Lucky Project</title>
-    <script src = "./index.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
     <link rel = "stylesheet" href = "style.css">
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        </style>
-    </head>
-    <body>
-        <div class = "list">
-            <div class = "yellow"></div>
-            <h2 class = "toDoList">To-Do List</h2>
-            <img src = "./up.svg" alt = "up" class = "notButtonOnUp"></img>
-            <div class = "mainList">
-                <div class = "writings">
-                   <div class = "elementsOfList"><img src = "./delete.svg" alt = "delete" class = "delete"></div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+    </style>
+</head>
+<body onsubmit = "return false">
+
+<main class = "main">
+    <div class = "container">
+        <h2>To-Do List</h2>
+        <div class="input-group">
+            <div class="todos-container">
+                <div class="todo-item-container">
+                    <!-- <form> -->
+                        <input type="text" id="text-input-field">
+                    <!-- </form>
+                    <form> -->
+                        <button id="delete-button">
+                            <img src="delete.svg" alt="delete">
+                        </button>
+                    <!-- </form> -->
                 </div>
             </div>
-            <img src = "./addbutton.svg" alt = "add" class = "addButton"></img>
-        </div>
-    <script src="script.js"></script>
+            <!-- <button id="add-button">
+                <img src = "./addbutton.svg" alt = "addbutton" width="200">
+            </button> -->
 
-    </body>
+        <!-- </div>
+
+        <div class="todos-container"> -->
+            <!-- <div class="todo-item-container"> -->
+                <!-- <p id = "todo-text">gym</p> -->
+                <!-- <button id="delete-button">
+                    <img src="delete.svg" alt="delete">
+                </button> -->
+            <!-- </div> -->
+        </div>
+
+    </div>
+
+</main>
+
+<button id="add-button">
+    <img src = "./addbutton.svg" alt = "addbutton" width="200">
+</button>
+
+
+    <script src = "./script.js"></script>
+
+
+</body>
 </html>
 
 
+<!-- <div class = "main-border">
+    <h2 class = "toDoListWord">To-Do List</h2>
+
+    <form>
+        <button class = "notButtonOnUp"><img src = "./up.svg" alt = "up" width="40"></button>
+    </form>
+
+    <div class = 'placetowriteAnddeletebutton'>
+        <form>
+            <textarea class = "placetowrite" id = 'placetowriteiid'></textarea>
+        </form>
+        
+        <form>
+            <button class = "delete"><img src = "./delete.svg" alt = "delete" width="30" height="30"></button>
+        </form>
+    </div>
+
+    <form> -->
+        <!-- <button class = "addbutton" data-target="#ta1"><img src = "./addbutton.svg" alt = "addbutton" width="200"></button> -->
+        <!-- <button class = "addbutton" id = "addbuttonid"><img src = "./addbutton.svg" alt = "addbutton" width="200"></button>
+    </form>
+
+    </div> -->

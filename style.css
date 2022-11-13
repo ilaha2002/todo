@@ -1,91 +1,175 @@
-/* body {
-    padding-top: 4%;
-    padding-left: 4%;
-    width: 90vw;
-    height: 70vh;
-    background-color: white;
-} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
 
-.list {
-    width: 25%;
+.main {
+  width: 25%;
     height: 60%;
     margin: auto;
-    margin-top: 195px;
+    margin-top: 345px;
+    margin-left: 795px; 
     /* padding-bottom: 7%; */
-    
     background-color: white;
     border: 1px;
     border-color: rgba(128, 128, 128, 0.44);
     border-radius: 15px;
     border-width: 2px;
     border-style: groove;
+    border-radius: 10px;
+    min-width: 450px;
+    min-height: 300px;
+    transform: translate(-50%,-50%); 
+    border-top: 35px solid #FFDC40 ;  
 }
 
-.yellow {
-position: relative;
-height: 28px;
-left: 0%;
-top: 0%;
-background: #FFDC40;
+/* .container {
+
+} */
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+    font-style: solid Black;
+    font-size: 40px;
+    padding-top: -5%;
+    padding-left: 5%;
+    text-align: Center; 
+    /* vertical-align: Top; */
+     font-weight: 900;
 }
 
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#text-input-field {
+  /* width: 100%; */
+  /* padding: 10px; */
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  position: relative;
+    width: 57%;
+    height: 60%;
+    margin-top: 0%;
+    margin-left: 7%;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    padding-left: 8%;
+    padding-bottom: 2%;
+    /* placeholder: ; */
+    background-color: white;
+    border: 1px;
+    border-color: rgba(128, 128, 128, 0.44);
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: groove;
+    border-left: 0%;
+}
+
+#add-button {
+  position: relative;
+    margin-top: -30%;
+    margin-left: 28%;
+    margin-bottom: 0%;
+    /* padding-top: 5%; */
+    /* padding-bottom: -20; */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* .todos-container {
+  overflow-y: scroll;
+} */
+
+.todo-item-container {
+  /* display: flex; */
+  margin-bottom: 5px;
+}
+
+#todo-text {
+  font-size:20px;
+  letter-spacing: 1.5px;
+  padding-left: 20px;
+  user-select: none;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: blue;
+
+}
+
+#delete-button {
+    position: relative;
+    margin-top: 0%;
+    margin-left: 80%;
+    margin-bottom: 0%;
+    padding-top: -40%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main-border {
+    width: 25%;
+    height: 60%;
+    margin: auto;
+    margin-top: 345px;
+    margin-left: 795px; */
+    /* padding-bottom: 7%; */
+    /* background-color: white;
+    border: 1px;
+    border-color: rgba(128, 128, 128, 0.44);
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 10px;
+    min-width: 450px;
+    min-height: 300px;
+    transform: translate(-50%,-50%); 
+    border-top: 35px solid #FFDC40 ;  
+}
+.toDoListWord {
+    font-family: 'Roboto', sans-serif;
+    font-style: solid Black;
+    font-size: 40px;
+    padding-top: -5%;
+    padding-left: 5%;
+    text-align: Center; */
+    /* vertical-align: Top; */
+    /* font-weight: 900;
+}
 .notButtonOnUp {
     position: relative;
     margin-top: -10%;
     margin-left: 80%;
     margin-bottom: 3%;
-}
-
-.toDoList {
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-style: Black;
-    font-size: 26px;
-    padding-left: 10%;
-    text-align: Center;
-    vertical-align: Top;
-}
-
-.mainList {
-    width: 57%;
-    height: 60%;
-    margin-top: 0%;
-    margin-left: 7%;
-    margin-bottom: 7%;
-    /* padding-bottom: 7%; */
-    padding-left: 28%;
-    
-    background-color: white;
-    border: 1px;
-    border-color: rgba(128, 128, 128, 0.44);
-    border-radius: 15px;
-    border-width: 2px;
-    border-style: groove;
-}
-
-.addButton {
-    position: relative;
-    margin-top: -7%;
-    margin-left: 32%;
-    margin-bottom: 5%;
-    padding-top: 5%;
-}
-
-.writings {
-    position: relative;
-    margin-top: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    padding-top: 0%;
-
-}
-
-.elementsOfList {
-    position: relative;
-    margin-top: 0%;
-    margin-left: -35%;
-    margin-bottom: 5%;
-    padding-top: 5%;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .delete {
@@ -93,5 +177,83 @@ background: #FFDC40;
     margin-top: 0%;
     margin-left: 80%;
     margin-bottom: 0%;
-    padding-top: 0%;
+    padding-top: -40%;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
+.delete input#button{
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+   
+  }
+
+  .placetowrite {
+    position: relative;
+    width: 57%;
+    height: 60%;
+    margin-top: 0%;
+    margin-left: 7%;
+    margin-bottom: 0%;
+    padding-bottom: 4%;
+    padding-left: 28%; */ /* проверить от текста как отталкивается*/
+    /* placeholder: ; */
+    /* background-color: white;
+    border: 1px;
+    border-color: rgba(128, 128, 128, 0.44);
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: groove;
+    border-left: 0%;
+  } */
+
+  /* input {
+    margin-top: 0.5rem;
+}
+
+input::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color: red;
+} */
+
+  /* .addbutton {
+    position: relative;
+    margin-top: -30%;
+    margin-left: 28%;
+    margin-bottom: 0%;
+    /* padding-top: 5%; */
+    /* padding-bottom: -20; */
+    /* background: none;
+    border: none;
+    cursor: pointer;
+  } */ 
+  /* textarea {
+    resize: none;
+  }
+  .placetowriteAnddeletebutton {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 4%;
+  }
+
+  #addbuttonid {
+    position: relative;
+    margin-top: -30%;
+    margin-left: 28%;
+    margin-bottom: 0%; */
+    /* padding-top: 5%; */
+    /* padding-bottom: -20; */
+    /* background: none;
+    border: none;
+    cursor: pointer;
+  } */
