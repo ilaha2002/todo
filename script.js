@@ -1,42 +1,33 @@
+
 const textInputField = document.querySelector('#text-input-field');
 const addButton = document.querySelector('#add-button');
 const todosContainer = document.querySelector('.todos-container');
+const deleteButton = document.querySelector('#delete-button');
 
-// addButton.forEach((element,i) => {
-//   element.addEventListener('click', () => {
-//     inputs[i].value=''
-//   });
-
-// });
-
-// inputs.forEach(element => {
-//   addEventListener('click',()=> {
-//     if(keycode = 'enter')
-//   });
-// });
 
 addButton.addEventListener('click', () => {
-  if(textInputField.value.trim().length == '')
-
+  if(textInputField.value.trim().length =="0") {
     return;
+  }
+
+
   const todoItemContainer = document.createElement('div');
   todoItemContainer.classList.add('todo-item-container');
-
+  // todoItemContainer.innerText = text-input-field.value;
   todosContainer.appendChild(todoItemContainer);
+ 
 
-
-
-  const todoText = document.createElement('p');
+  const todoText = document.createElement('input');
   todoText.id = 'text-input-field';
-  todoText.innerText = textInputField.value;
   todoItemContainer.appendChild(todoText);
 
+
   todoText.addEventListener('dbclick', () => {
-    todoText.classList.add('line-through');
+  todoText.classList.add('line-through');
    
   });
 
-  const deleteButton = document.createElement('button');
+  const deleteButton = document.createElement('delete-button');
   deleteButton.id = 'delete-button';
 
   const deleteImage = document.createElement('img');
@@ -44,11 +35,13 @@ addButton.addEventListener('click', () => {
   deleteButton.appendChild(deleteImage);
   todoItemContainer.appendChild(deleteButton);
 
-  deleteButton.addEventListener('click', () =>{
-    const parent = deleteButton.parentElement;
-    parent.parentElement.removeChild(parent);
+  deleteButton.addEventListener('click', (event) =>{
+    console.log(event.target.parentElement.parentElement.querySelector("#text-input-field"));
+    //const parent = deleteButton.parentElement;
+    //parent.parentElement.removeChild(parent);
+    event.target.parentElement.parentElement.remove();
   });
+  
 
-  textInputField.value = "";
 
 });

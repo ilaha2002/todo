@@ -11,9 +11,12 @@
   border: none;
   cursor: pointer;
 }
-/* #form {
-  background-color: white;
-} */
+
+#up:hover {
+  color:black;
+}
+
+
 ul{
   list-style-type: none;
 }
@@ -29,7 +32,7 @@ li{
     margin-left: 795px; 
     background-color: white;
     border: 1px;
-    /* border-color: rgba(128, 128, 128, 0.44); */
+    
     border-color: white;
     border-radius: 15px;
     border-width: 2px;
@@ -59,22 +62,27 @@ h2 {
 }
 
 #text-input-field {
-  width:200px;
+  height: 40px;
+  width:340px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
-  border-style: none;
-    height: 45px;
-    margin-top: 3px;
-    padding-top: 2%;
-    padding-left: 8%;
-    padding-bottom: 0px;
+  margin-left: -40px;
+  margin-top: 7px;
     background-color: white;
+    border: 1px;
     
-    border-radius: 15px;
-    border-width: 0px;
-    border-left: 0%;
-    
+    border-radius: 10px;
+    border-width: 0%;
+    border-style: groove;
+    border-left: -50%;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+#text-input-field.over {
+  border: 3px dotted #666;
 }
 
 #add-button {
@@ -90,7 +98,7 @@ h2 {
 
 .todo-item-container {
   height: 55px;
-  width:340px;
+  width:300px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -98,12 +106,10 @@ h2 {
     background-color: white;
     border: 1px;
     
-    border-radius: 15px;
-    border-width: 2px;
-    border-style: groove;
+    
     border-left: 0%;
     display: flex;
-    flex-direction: row;
+    
     border-color: aliceblue;
 }
 
@@ -120,11 +126,25 @@ h2 {
 
 }
 
+.todos-container{
+  margin-left: 40px;
+  border-radius: 15px;
+    border-width: 2px;
+    border-style: groove;
+    width: 370px;
+
+    
+}
 #delete-button {
-    margin-top: 8px;
-    margin-left: 80px;
+    margin-top: 15px;
+    margin-left: -45px;
     background: none;
     border: none;
     cursor: pointer;
-    width:50px;
+    width:20px;
+    height:20px;
+}
+#delete-button:hover {
+  background-color:blueviolet;
+  border-radius: 50%;
 }
